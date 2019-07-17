@@ -1,0 +1,56 @@
+// Top-level build file where you can add configuration options common to all sub-projects/modules.
+
+buildscript {
+    
+    repositories {
+        google()
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.android.tools.build:gradle:3.1.4'
+
+        // NOTE: Do not place your application dependencies here; they belong
+        // in the individual module build.gradle files
+    }
+}
+
+
+
+// define all dependency versions in one place
+ext {
+    androidSupportVersion = '27.1.1'
+    butterKnifeVersion = '8.8.1'
+    daggerVersion = '2.15'
+    gsonVersion = '2.8.4'
+    okHttpVersion = '3.10.0'
+    retrofitVersion = '2.4.0'
+    rxAndroidVersion = '2.0.2'
+    rxJavaVersion = '2.1.14'
+    firebaseVersion = '16.0.1'
+    firebaseUIVersion = '4.1.0'
+    textDrwawableVersion = '1.0.1'
+    frescoVersion = '1.11.0'
+    rxFirebaseCoreVersion = '16.0.3.0'
+    rxFirebaseDatabaseVersion = '16.0.1.1'
+    rxBindingVersion = '0.4.0'
+
+    // test
+    jUnitVersion = '4.12'
+    mockitoVersion = '1.10.19'
+
+    // android
+    compileSdkVersion = 27
+    buildToolsVersion = '27.0.3'
+    minSdkVersion = 21
+    targetSdkVersion = 27
+}
+allprojects {
+    repositories {
+        google()
+        jcenter()
+    }
+}
+
+task clean(type: Delete) {
+    delete rootProject.buildDir
+}
